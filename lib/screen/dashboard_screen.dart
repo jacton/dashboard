@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:dashboard/const/constants.dart';
 import 'package:dashboard/ui/window_top_bar.dart';
 import 'package:dashboard/screen/side_menu.dart';
+import 'package:dashboard/screen/main_screen.dart';
 import 'package:dashboard/components/storage_details.dart';
 
 class MainScreen extends StatelessWidget {
@@ -20,7 +21,7 @@ class MainScreen extends StatelessWidget {
               endIndent: 10,
             ),
             Expanded(
-              child: BodyScreen(),
+              child: MainFrame(),
             ),
           ],
         ),
@@ -31,7 +32,6 @@ class MainScreen extends StatelessWidget {
 
 class BodyScreen extends StatelessWidget {
   BodyScreen({Key? key}) : super(key: key);
-  final PageController _ctrl = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,35 +72,8 @@ class _BodyPageState extends State<BodyPage> {
       controller: _ctrl,
       children: [
         StorageDetails(),
-        DashboardScreen(),
+        StorageDetails(),
       ],
-    );
-  }
-}
-
-class DashboardScreen extends StatelessWidget {
-  const DashboardScreen({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: SingleChildScrollView(
-        primary: false,
-        child: Column(
-          children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'You have ',
-                ),
-                Text(
-                  'You have ',
-                ),
-              ],
-            )
-          ],
-        ),
-      ),
     );
   }
 }

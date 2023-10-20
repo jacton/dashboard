@@ -6,6 +6,6 @@ const bgColor = Color(0xFF212332);
 
 const defaultPadding = 16.0;
 
-class Global {
-  static PageController _pageCtrl = PageController();
-}
+// class Global {
+//   static PageController _pageCtrl = PageController();
+// }
