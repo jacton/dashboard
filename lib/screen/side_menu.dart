@@ -4,8 +4,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 class SideMenu extends StatelessWidget {
   const SideMenu({
     Key? key,
+    required this.pageController,
   }) : super(key: key);
 
+  final PageController pageController;
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -19,6 +21,7 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_dashboard.svg",
             press: () {
               print('dashboard');
+              pageController.jumpToPage(0);
             },
           ),
           DrawerListTile(
@@ -26,6 +29,7 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_tran.svg",
             press: () {
               print('Transaction');
+              pageController.jumpToPage(1);
             },
           ),
           DrawerListTile(
@@ -33,6 +37,7 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_task.svg",
             press: () {
               print('Task');
+              pageController.jumpToPage(2);
             },
           ),
           DrawerListTile(
@@ -40,6 +45,7 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_doc.svg",
             press: () {
               print('Documents');
+              pageController.jumpToPage(3);
             },
           ),
           DrawerListTile(
@@ -47,6 +53,7 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_store.svg",
             press: () {
               print('Store');
+              pageController.jumpToPage(4);
             },
           ),
           DrawerListTile(
@@ -54,6 +61,7 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_notification.svg",
             press: () {
               print('Notification');
+              pageController.jumpToPage(5);
             },
           ),
           DrawerListTile(
@@ -61,6 +69,7 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_profile.svg",
             press: () {
               print('Profile');
+              pageController.jumpToPage(6);
             },
           ),
           DrawerListTile(
@@ -68,6 +77,7 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_setting.svg",
             press: () {
               print('Settings');
+              pageController.jumpToPage(7);
             },
           ),
         ],
