@@ -5,6 +5,7 @@ import 'package:dashboard/components/storage_details.dart';
 import 'package:dashboard/components/news_details.dart';
 import 'package:dashboard/components/table_info.dart';
 import 'package:dashboard/components/pageinfo/view.dart';
+import 'package:dashboard/components/himalaya/view.dart';
 
 class MainFrame extends StatefulWidget {
   const MainFrame({Key? key}) : super(key: key);
@@ -41,7 +42,7 @@ class _MainFrameState extends State<MainFrame> {
                 NewsDetails(),
                 TableInfo(),
                 PageinfoPage(),
-                Text('A5'),
+                HimalayaPage(),
                 Text('A6'),
                 Text('A7'),
               ],
