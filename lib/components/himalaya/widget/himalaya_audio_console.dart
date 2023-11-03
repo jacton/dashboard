@@ -127,7 +127,7 @@ class HimalayaAudioConsole extends StatelessWidget {
                 builder: (logic) {
                   return Text(
                     data.title,
-                    style: TextStyle(fontSize: 15),
+                    style: TextStyle(fontSize: 15, color: Colors.redAccent),
                   );
                 },
               ),
@@ -139,14 +139,15 @@ class HimalayaAudioConsole extends StatelessWidget {
                 builder: (logic) {
                   return Text(
                     data.subTitle ?? '',
-                    style: TextStyle(fontSize: 15),
+                    style: TextStyle(fontSize: 15, color: Colors.grey),
                   );
                 },
               ),
             ]),
 
             //进度
-            Text('01:30 / 03:42', style: TextStyle(fontSize: 16)),
+            Text('01:30 / 03:42',
+                style: TextStyle(fontSize: 16, color: Colors.grey)),
           ]),
 
           //进度

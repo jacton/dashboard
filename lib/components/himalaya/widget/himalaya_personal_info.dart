@@ -60,7 +60,11 @@ class HimalayaPersonalInfo extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(left: 30),
       child: IconButton(
-        icon: const Icon(Icons.autorenew, size: 16),
+        icon: const Icon(
+          Icons.autorenew,
+          size: 16,
+          color: Colors.grey,
+        ),
         onPressed: onRefresh,
       ),
     );
@@ -70,7 +74,11 @@ class HimalayaPersonalInfo extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(left: 30),
       child: IconButton(
-        icon: const Icon(Icons.arrow_forward_ios_outlined, size: 16),
+        icon: const Icon(
+          Icons.arrow_forward_ios_outlined,
+          size: 16,
+          color: Colors.grey,
+        ),
         onPressed: onRightArrow,
       ),
     );
@@ -78,7 +86,11 @@ class HimalayaPersonalInfo extends StatelessWidget {
 
   Widget _buildLeftArrow() {
     return IconButton(
-      icon: const Icon(Icons.arrow_back_ios, size: 16),
+      icon: const Icon(
+        Icons.arrow_back_ios,
+        size: 16,
+        color: Colors.grey,
+      ),
       onPressed: onLeftArrow,
     );
   }

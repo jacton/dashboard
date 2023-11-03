@@ -29,10 +29,15 @@ Widget himalayaBuildInfoListBg({required List<Widget> children}) {
 ///顶部右侧信息流外层布局设置 - 可滑动部分
 Widget himalayaBuildScrollInfoListBg({required List<Widget> children}) {
   return Expanded(
-    child: CustomSingleChildScrollView(
-      child: SizedBox(
-        width: 860,
-        child: Column(children: children),
+    child: ScrollbarTheme(
+      data: ScrollbarThemeData(
+        thumbColor: MaterialStateProperty.all(Colors.red),
+      ),
+      child: CustomSingleChildScrollView(
+        child: SizedBox(
+          width: 860,
+          child: Column(children: children),
+        ),
       ),
     ),
   );

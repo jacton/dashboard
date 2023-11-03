@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:dashboard/components/storage_details.dart';
 import 'package:dashboard/components/news_details.dart';
 import 'package:dashboard/components/table_info.dart';
+import 'package:dashboard/components/scrollinfo.dart';
 import 'package:dashboard/components/pageinfo/view.dart';
 import 'package:dashboard/components/himalaya/view.dart';
 
@@ -43,7 +44,7 @@ class _MainFrameState extends State<MainFrame> {
                 TableInfo(),
                 PageinfoPage(),
                 HimalayaPage(),
-                Text('A6'),
+                ScrollInfo(),
                 Text('A7'),
               ],
             ),

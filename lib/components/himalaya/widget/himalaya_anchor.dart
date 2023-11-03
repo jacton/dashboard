@@ -50,6 +50,7 @@ class HimalayaAnchor extends StatelessWidget {
           itemInfo.subTitle ?? '',
           style: TextStyle(
             fontSize: 18,
+            color: Colors.redAccent,
           ),
         ),
       ),

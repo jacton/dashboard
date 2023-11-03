@@ -52,7 +52,7 @@ class HimalayaRankList extends StatelessWidget {
           //标题
           Text(
             item.subItemList[index].title,
-            style: TextStyle(fontSize: 15),
+            style: TextStyle(fontSize: 15, color: Colors.redAccent),
           ),
 
           //子标题

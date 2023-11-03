@@ -40,7 +40,8 @@ class HimalayaNewest extends StatelessWidget {
           _buildPicCard(item),
 
           //文字描述
-          Text(item.title, style: TextStyle(fontSize: 15)),
+          Text(item.title,
+              style: TextStyle(fontSize: 15, color: Colors.redAccent)),
 
           //子标题
           _buildSubTitle(item),
