@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';
+import 'routeview.dart';
 
 class PageinfoPage extends StatelessWidget {
   PageinfoPage({Key? key}) : super(key: key);
@@ -74,6 +75,33 @@ class PageinfoPage extends StatelessWidget {
               print('onUpdate');
             },
             child: const Text('刷新'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(RouteViewPage());
+              print('go to routeview');
+            },
+            child: const Text('路由'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(RouteViewMain(
+                title: "路由2",
+                children: RouteViewDemo(),
+              ));
+              print('go to routeview');
+            },
+            child: const Text('路由2'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(RouteViewMain(
+                title: "路由3",
+                children: Text("hello world"),
+              ));
+              print('go to routeview');
+            },
+            child: const Text('路由3'),
           ),
         ],
       ),

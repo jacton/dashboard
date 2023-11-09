@@ -34,10 +34,34 @@ class NewsDetails extends StatelessWidget {
     return list.toList();
   }
 
+  Widget _getItem(index) {
+    return Container(
+      child: Column(
+        children: [
+          NewsInfoCard(
+              title: "$index Title news",
+              subTitle: "Container组件应该是最常用的组件之一\nContainer组件可以直接设置其宽高",
+              svgSrc: "svgSrc",
+              author: "张三",
+              time: "2023/10/30"),
+          Divider(
+            height: 1,
+            color: Colors.white70,
+            indent: 10,
+            endIndent: 10,
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: this._getData(),
+    return ListView.builder(
+      itemCount: 200,
+      itemBuilder: (context, index) {
+        return _getItem(index);
+      },
     );
   }
 }

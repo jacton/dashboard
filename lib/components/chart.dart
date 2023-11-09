@@ -25,7 +25,7 @@ class Chart extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: defaultPadding),
+                const SizedBox(height: defaultPadding),
                 Text(
                   "29.1",
                   style: Theme.of(context).textTheme.headlineMedium!.copyWith(
