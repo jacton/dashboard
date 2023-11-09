@@ -39,7 +39,7 @@ class RouteViewMain extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _buildTitle(),
-          Divider(
+          const Divider(
             height: 1,
             color: Colors.red,
             indent: 10,
@@ -64,12 +64,12 @@ class RouteViewDemo extends StatelessWidget {
           height: 100,
           width: double.infinity,
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.green,
             ),
           ),
         ),
-        Text('路由界面2'),
+        const Text('路由界面2'),
         ElevatedButton(
           onPressed: () {
             Get.back();
@@ -77,12 +77,16 @@ class RouteViewDemo extends StatelessWidget {
           },
           child: const Text('返回'),
         ),
-        SizedBox(
+        const SizedBox(
           height: 100,
           width: 200,
           child: Padding(
             padding: EdgeInsets.all(8.0),
             child: Card(
+              color: Colors.yellow,
+              shadowColor: Colors.red,
+              elevation: 10,
+              borderOnForeground: false,
               child: Text(
                 "card",
                 style: TextStyle(
@@ -91,10 +95,6 @@ class RouteViewDemo extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              color: Colors.yellow,
-              shadowColor: Colors.red,
-              elevation: 10,
-              borderOnForeground: false,
             ),
           ),
         ),
@@ -124,7 +124,7 @@ class RouteViewPage extends StatelessWidget {
                         Get.back();
                       },
                       icon: const Icon(Icons.arrow_back_ios)),
-                  Text('路由界面'),
+                  const Text('路由界面'),
                   IconButton(
                       onPressed: () {
                         print("左侧按钮");
@@ -133,7 +133,7 @@ class RouteViewPage extends StatelessWidget {
                 ],
               ),
             ),
-            Divider(
+            const Divider(
               height: 1,
               color: Colors.red,
               indent: 10,
@@ -146,12 +146,12 @@ class RouteViewPage extends StatelessWidget {
                   height: 100,
                   width: 200,
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.green,
                     ),
                   ),
                 ),
-                Text('路由界面1'),
+                const Text('路由界面1'),
                 ElevatedButton(
                   onPressed: () {
                     Get.back();
