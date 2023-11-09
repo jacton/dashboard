@@ -77,6 +77,27 @@ class RouteViewDemo extends StatelessWidget {
           },
           child: const Text('返回'),
         ),
+        SizedBox(
+          height: 100,
+          width: 200,
+          child: Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Card(
+              child: Text(
+                "card",
+                style: TextStyle(
+                  fontSize: 28,
+                  color: Colors.red,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              color: Colors.yellow,
+              shadowColor: Colors.red,
+              elevation: 10,
+              borderOnForeground: false,
+            ),
+          ),
+        ),
       ],
     );
   }

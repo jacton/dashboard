@@ -97,7 +97,18 @@ class PageinfoPage extends StatelessWidget {
             onPressed: () {
               Get.to(RouteViewMain(
                 title: "路由3",
-                children: Text("hello world"),
+                children: Container(
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                  ),
+                  child: Column(
+                    children: [
+                      Text("456"),
+                      Text('123'),
+                    ],
+                  ),
+                ),
               ));
               print('go to routeview');
             },
