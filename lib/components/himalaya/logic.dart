@@ -141,7 +141,7 @@ class HimalayaLogic extends GetxController {
 
   ///刷新数据
   void onRefreshData() {
-    print('刷新数据');
+    print('刷新数据1');
   }
 
   ///点击设置
