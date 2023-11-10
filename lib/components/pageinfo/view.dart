@@ -78,38 +78,38 @@ class PageinfoPage extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Get.to(RouteViewPage());
+              Get.to(() => RouteViewPage());
               print('go to routeview');
             },
             child: const Text('路由'),
           ),
           ElevatedButton(
             onPressed: () {
-              Get.to(RouteViewMain(
-                title: "路由2",
-                children: RouteViewDemo(),
-              ));
+              Get.to(() => RouteViewMain(
+                    title: "路由2",
+                    children: RouteViewDemo(),
+                  ));
               print('go to routeview');
             },
             child: const Text('路由2'),
           ),
           ElevatedButton(
             onPressed: () {
-              Get.to(RouteViewMain(
-                title: "路由3",
-                children: Container(
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-                  ),
-                  child: Column(
-                    children: [
-                      Text("456"),
-                      Text('123'),
-                    ],
-                  ),
-                ),
-              ));
+              Get.to(() => RouteViewMain(
+                    title: "路由3",
+                    children: Container(
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.green,
+                      ),
+                      child: Column(
+                        children: [
+                          Text("456"),
+                          Text('123'),
+                        ],
+                      ),
+                    ),
+                  ));
               print('go to routeview');
             },
             child: const Text('路由3'),
